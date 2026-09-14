@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Days Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🔥 100 Days Challenge</h1>
+      <p id="dayInfo">Loading...</p>
+      <div class="progress-bar-outer"><div class="progress-bar-inner" id="overallBar"></div></div>
+    </header>
+
+    <section class="day-nav">
+      <button id="prevDay">◀ Prev</button>
+      <input type="number" id="dayInput" min="1" max="100" value="1">
+      <button id="nextDay">Next ▶</button>
+      <button id="todayBtn">Today</button>
+    </section>
+
+    <section id="habitList" class="habit-list"></section>
+
+    <section class="add-habit">
+      <input type="text" id="newHabitName" placeholder="New habit name...">
+      <input type="text" id="newHabitIcon" placeholder="Icon (emoji)" maxlength="2">
+      <button id="addHabitBtn">+ Add Habit</button>
+    </section>
+
+    <section class="stats" id="statsSection">
+      <h2>📊 Stats</h2>
+      <div id="statsList"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
